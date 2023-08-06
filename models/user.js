@@ -19,7 +19,8 @@ const User = database.define(modelName, {
   },
   email: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+    unique: true
   },
   sendDate: {
     type: DataTypes.STRING,
